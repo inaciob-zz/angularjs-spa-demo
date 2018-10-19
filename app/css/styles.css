@@ -1,0 +1,13 @@
+/* Start utilities */
+/* 
+	NOTE: This naming convention is derived from Bootstrap 4 documentation at https://getbootstrap.com/docs/4.1/utilities/spacing/,
+			adding custom class here as I decided not to use Sass for this project but custom sizes can be added via the $spacers Sass map variable
+			if Sass is used.
+*/
+.m-t-20 {
+	margin-top: 20px;
+}
+/* End utilities */
+.main-content {
+	padding: 16px 30px;
+}
