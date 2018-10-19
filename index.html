@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AngularJS SPA Demo</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="app/css/styles.css">
+</head>
+<body ng-app="SPADemo">
+	<div ng-controller="AppCtrl as appCtrl" class="container m-t-20">
+		<h1 class="text-center">Main Heading</h1>
+		<nav>
+			<ul class="nav nav-pills links-container">
+				<!-- TODO: Make this more DRY -->
+				<li class="nav-item">
+					<a class="nav-link" ui-sref="home" ui-sref-active="active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" ui-sref="about" ui-sref-active="active">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" ui-sref="contact" ui-sref-active="active">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<ui-view></ui-view>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+	<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+	<script src="app/app.controller.js"></script>
+</body>
+</html>
